@@ -1,0 +1,6 @@
+
+
+
+
+
+Created main_app added 'main_app' element to list INSTALLED_APPS in labelImage\settings.py
