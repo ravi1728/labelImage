@@ -7,3 +7,4 @@ Created main_app added 'main_app' element to list INSTALLED_APPS in labelImage\s
 created 2 views home(loads main_app\templates\home.html) and label(loads main_app\templates\label.html)
 added urls.py in \main_app and added urls for views home and label
 added urls from \main_app\urls.py to \labelImage\urls.py 
+created basic UI toolbar(for function buttons) and canvas(to load images)

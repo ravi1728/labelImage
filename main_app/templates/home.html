@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<title>LabelImage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 4% auto;
+  grid-template-rows:auto auto auto auto; 
+  grid-gap: 10px;
+  background-color: #219F3;
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: rgba(25, 255, 255, 0.8);
+  text-align: center;
+  padding: 0px 0;
+  font-size: 20px;
+}
+
+.Button1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:1;
+  grin-row-end:2;
+}
+
+.Button2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.canvas1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:1;
+  grid-row-end:26;
+  width:100%;
+  height:screen.height;
+
+}
+</style>
+</head>
+
+
+
 <body>
 
-<h1>The button Element</h1>
+<p id="demo"></p>
 
-<button type="button" onclick="alert('load image')">Load Image</button>
+
+
+
+<div class="grid-container">
+  
+  <button type="button" class="Button1" onclick="myFunction()">Buttion1</button>
+  <button type="button" class="Button2" onclick="alert('load image')">Button2</button>
+  <canvas id="myCanvas" class="canvas1" style="border:1px solid #d3d3d3;"> Your browser does not support the HTML5 canvas tag. </canvas>
+  
+</div>
+
+<script>
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "file");
+  document.body.appendChild(x);
+}
+</script>
  
+ <!--
+ <script>
+document.getElementById("demo").innerHTML =  "Screen width is " + screen.height;
+</script>
+ -->
 </body>
 </html>
